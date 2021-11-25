@@ -1,0 +1,32 @@
+.Colors {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.ColorSquareWrapper {
+  display: grid;
+  padding: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.ColorSquare {
+  height: 70px;
+  cursor: pointer;
+  width: 70px;
+  position: relative;
+}
+
+.ColorSquareSelected:after {
+  font: normal normal normal 20px/1 FontAwesome;
+  content: "\f00c";
+  color: white;
+  -webkit-text-stroke: 2px black;
+  position: absolute;
+  right: 75%;
+  top: 70%;
+}
