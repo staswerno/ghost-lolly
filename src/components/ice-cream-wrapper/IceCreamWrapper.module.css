@@ -1,7 +1,5 @@
 .IceCreamWrapper {
-  grid-column: 1 / 2;
-  grid-row: 1 / 5;
   display: grid;
-  justify-items: center;
-  align-items: center;
+  grid-area: icecream;
+  place-items: center;
 }
